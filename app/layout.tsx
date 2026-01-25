@@ -28,15 +28,17 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-         <ThemeProvider
+        <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-           {children}
+          <div className="w-full max-w-[1600px] mx-auto overflow-x-hidden">
+            {children}
+          </div>
         </ThemeProvider>
-       
+
       </body>
     </html>
   );

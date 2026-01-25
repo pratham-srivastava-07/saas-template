@@ -42,6 +42,7 @@ export default function HowItWorksSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="h-full"
             >
               <Card className="flex flex-col items-center text-center p-6 h-full">
                 <CardHeader>
